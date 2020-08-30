@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <h1 class='m-3'>LIST OF AVAILABLE RESTAURANTS:</h1>
+      <div id="movies">
+        <% @restaurants.each do |restaurant| %>
+          <h4><%= restaurant.name %></h4>
+          <p>Chef: <%= restaurant.chef %></p>
+          <p>Category: <%= restaurant.category.capitalize %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
